@@ -1,0 +1,52 @@
+{
+  "nodes":[
+    {"name":"Harvard","group":0},
+    {"name":"Yale","group":1},
+    {"name":"Princeston","group":1},
+    {"name":"MIT","group":1},
+
+    {"name":"Cal Tech","group":2},
+    {"name":"Vermont Institiute of Technology","group":2},
+
+    {"name":"NYU","group":2},
+
+    {"name":"BU","group":2},
+
+    {"name":"Stanford","group":3},
+
+    {"name":"Newark Community College","group":4},
+     {"name":"Newark Community College","group":4},
+      {"name":"Newark Community College","group":4},
+       {"name":"Newark Community College","group":4},
+        {"name":"Newark Community College","group":4},
+{"name":"Newark Community College","group":4},
+    {"name":"Newark Community College","group":4},
+
+    {"name":"Newark Community College","group":4}
+
+    
+
+  ],
+  "links":[
+    {"source":0,"target":1,"value":5},
+    {"source":0,"target":2,"value":5},
+    {"source":0,"target":3,"value":5},
+
+    {"source":3,"target":1,"value":5},
+
+
+    {"source":1,"target":6,"value":3},  
+
+    {"source":2,"target":7,"value":3},    
+
+    {"source":3,"target":4,"value":3},
+    {"source":3,"target":5,"value":3},
+
+    {"source":4,"target":8,"value":1}
+
+   
+
+
+   
+  ]
+}
