@@ -62,10 +62,18 @@ d3.json("data.json", function(error, graph) {
       .attr("class", "node")
       .attr("r", function(d){return 10-(2*d.group)})
       .style("fill", function(d) { return color(d.group); })
-      .on("mouseover", function(d){tooltip.style("visibility", "visible").text(d.name); d3.select(this).transition().attr("r", "15");})
+      
+      .on("mouseover", function(d){tooltip.style("visibility", "visible")
+      								.text(d.name);
+      								d3.select(this).transition()
+      								.attr("r", "15");})
+
 	  .on("mousemove", function(){return tooltip.style("top",
-    (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
-	  .on("mouseout", function(){tooltip.style("visibility", "hidden"); d3.select(this).transition().attr("r", function(d){return 10-(2*d.group)});})
+    								(d3.event.pageY-10)+"px")
+	  								.style("left",(d3.event.pageX+10)+"px");})
+	  .on("mouseout", function(){tooltip.style("visibility", "hidden");
+	  								d3.select(this).transition()
+	  								.attr("r", function(d){return 10-(2*d.group)});})
 	  .call(force.drag);
 
 
